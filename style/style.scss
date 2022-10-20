@@ -3,14 +3,26 @@
 
 .fluorish{
     width: 80vw;
-margin-left: 10vw;
-margin-top: 2vh;
+    margin-left: 10vw;
+    margin-top: 2vh;
 }
 
 .textAlign{
     text-align: center;
 }
 
+.fontBig{
+    font-size: 2rem;
+}
+
+.fontMed{
+    font-size: 1.2rem;
+}
+
 section p{
     padding: 15px;
+}
+
+#hours li{
+    list-style: none;
 }
