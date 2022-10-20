@@ -4,11 +4,11 @@
 }
 
 html {
-  font-family: "Amatic SC", cursive;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 header {
-  background-color: rgba(244, 241, 222, 0.8078431373);
+  background-color: #D0E1D4;
   padding-top: 25px;
 }
 
@@ -29,11 +29,14 @@ header {
 }
 
 #dropDown {
-  background-color: #f4f1de;
+  background-color: #D0E1D4;
   display: none;
   position: absolute;
   width: 100vw;
   height: 100vh;
+}
+#dropDown a {
+  color: #3A3E3B;
 }
 
 #menu:focus-within {
@@ -62,6 +65,18 @@ nav li a:active {
   color: #348aa7;
 }
 
+footer {
+  background-color: #D0E1D4;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: 100px;
+}
+footer img {
+  width: 40px;
+}
+
 .fluorish {
   width: 80vw;
   margin-left: 10vw;
@@ -77,13 +92,39 @@ nav li a:active {
 }
 
 .fontMed {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
+.lobCursive {
+  font-family: "Lobster", cursive;
+}
+
+.barlowFont {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+section {
+  color: #3A3E3B;
+}
 section p {
   padding: 15px;
 }
+section #hours > li {
+  list-style-type: none;
+}
 
-#hours li {
-  list-style: none;
+button {
+  padding: 5px 20px;
+  margin-bottom: 25px;
+  background-color: #3A3E3B;
+}
+button a:visited {
+  color: white;
+}
+button a:active {
+  color: purple;
+}
+button a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

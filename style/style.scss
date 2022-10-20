@@ -1,5 +1,7 @@
 @use "general";
 @use "header";
+@use "footer";
+@import "variables";
 
 .fluorish{
     width: 80vw;
@@ -16,13 +18,39 @@
 }
 
 .fontMed{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
-section p{
-    padding: 15px;
+.lobCursive{
+    font-family: $lobster-cursive;
 }
 
-#hours li{
-    list-style: none;
+.barlowFont{
+    font-family: $barlow-semi-cond;
+}
+
+section{
+    color: $black-olive;
+    p{
+        padding: 15px;
+    }
+    #hours > li{
+        list-style-type: none;
+    }
+}
+
+button{
+    padding: 5px 20px;
+    margin-bottom: 25px;
+    background-color: $black-olive;
+    a:visited{
+        color: white;
+    }
+    a:active{
+        color: purple;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }

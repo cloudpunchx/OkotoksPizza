@@ -1,5 +1,7 @@
+@import "variables";
+
 header{
-    background-color: #f4f1dece;
+    background-color: $honeydew;
     padding-top: 25px;
 }
 
@@ -17,11 +19,14 @@ header{
 }
 
 #dropDown{
-    background-color: #f4f1de;
+    background-color: $honeydew;
     display: none;
     position: absolute;
     width: 100vw;
     height: 100vh;
+    a{
+        color: $black-olive;
+    }
 }
 
 #menu:focus-within{

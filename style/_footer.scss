@@ -1,0 +1,13 @@
+@import "variables";
+
+footer{
+    background-color: $honeydew;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: 100px;
+    img{
+        width: 40px;
+    }
+}
