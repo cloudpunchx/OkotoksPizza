@@ -116,23 +116,33 @@ footer #instagram {
   text-shadow: 1px 1px rgb(150, 150, 150);
 }
 
+.blackOlive {
+  color: #3A3E3B;
+}
+
 .slides {
   width: 90vw;
 }
 
 section p {
   padding: 15px;
-  color: #3A3E3B;
 }
 section #hours > li {
   list-style-type: none;
+}
+
+.indexSections {
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 button {
   background-color: #3A3E3B;
   box-shadow: 2px 1px rgb(100, 98, 98);
   padding: 5px 20px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 35px;
 }
 button a:visited {
   color: white;

@@ -3,6 +3,8 @@
 @use "footer";
 @import "variables";
 
+// NEED TO DO: WRITE COMMENTS FOR DROPDOWN AND CAROUSEL - MARK SAID
+
 .fluorish{
     width: 80vw;
     margin-left: 10vw;
@@ -37,6 +39,10 @@
     text-shadow: 1px 1px rgb(150, 150, 150);
 }
 
+.blackOlive{
+    color: $black-olive;
+}
+
 .slides{
     width: 90vw;
 }
@@ -44,18 +50,24 @@
 section{
     p{
         padding: 15px;
-        color: $black-olive;
     }
     #hours > li{
         list-style-type: none;
     }
 }
 
+.indexSections{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 button{
     background-color: $black-olive;
     box-shadow: 2px 1px rgb(100, 98, 98);
     padding: 5px 20px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 35px;
     a:visited{
         color: white;
     }
