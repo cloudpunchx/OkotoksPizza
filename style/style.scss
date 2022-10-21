@@ -21,6 +21,10 @@
     font-size: 1.4rem;
 }
 
+.fontSmall{
+    font-size: .8rem;
+}
+
 .lobCursive{
     font-family: $lobster-cursive;
 }
@@ -29,10 +33,18 @@
     font-family: $barlow-semi-cond;
 }
 
+.textShadow{
+    text-shadow: 1px 1px rgb(150, 150, 150);
+}
+
+.slides{
+    width: 90vw;
+}
+
 section{
-    color: $black-olive;
     p{
         padding: 15px;
+        color: $black-olive;
     }
     #hours > li{
         list-style-type: none;
@@ -40,14 +52,15 @@ section{
 }
 
 button{
+    background-color: $black-olive;
+    box-shadow: 2px 1px rgb(100, 98, 98);
     padding: 5px 20px;
     margin-bottom: 25px;
-    background-color: $black-olive;
     a:visited{
         color: white;
     }
     a:active{
-        color: purple;
+        color: $middle-blue;
     }
     a{
         color: white;

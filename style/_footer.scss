@@ -1,13 +1,18 @@
 @import "variables";
 
 footer{
-    background-color: $honeydew;
+    background-image: linear-gradient(whitesmoke, $honeydew);
     display: grid;
+    grid-template-columns: 40px 40px 1fr;
     justify-items: center;
     align-items: center;
-    padding: 25px;
+    padding: 50px;
     margin-top: 100px;
-    img{
+    #facebook{
         width: 40px;
+    }
+    #instagram{
+        width: 30px;
+        height: 30px;
     }
 }

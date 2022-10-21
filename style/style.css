@@ -4,11 +4,11 @@
 }
 
 html {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: whitesmoke;
 }
 
 header {
-  background-color: #D0E1D4;
+  background-image: linear-gradient(#D0E1D4, whitesmoke);
   padding-top: 25px;
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 #dropDown {
-  background-color: #D0E1D4;
+  background-image: linear-gradient(whitesmoke, #D0E1D4, whitesmoke);
   display: none;
   position: absolute;
   width: 100vw;
@@ -66,15 +66,20 @@ nav li a:active {
 }
 
 footer {
-  background-color: #D0E1D4;
+  background-image: linear-gradient(whitesmoke, #D0E1D4);
   display: grid;
+  grid-template-columns: 40px 40px 1fr;
   justify-items: center;
   align-items: center;
-  padding: 25px;
+  padding: 50px;
   margin-top: 100px;
 }
-footer img {
+footer #facebook {
   width: 40px;
+}
+footer #instagram {
+  width: 30px;
+  height: 30px;
 }
 
 .fluorish {
@@ -95,6 +100,10 @@ footer img {
   font-size: 1.4rem;
 }
 
+.fontSmall {
+  font-size: 0.8rem;
+}
+
 .lobCursive {
   font-family: "Lobster", cursive;
 }
@@ -103,26 +112,33 @@ footer img {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-section {
-  color: #3A3E3B;
+.textShadow {
+  text-shadow: 1px 1px rgb(150, 150, 150);
 }
+
+.slides {
+  width: 90vw;
+}
+
 section p {
   padding: 15px;
+  color: #3A3E3B;
 }
 section #hours > li {
   list-style-type: none;
 }
 
 button {
+  background-color: #3A3E3B;
+  box-shadow: 2px 1px rgb(100, 98, 98);
   padding: 5px 20px;
   margin-bottom: 25px;
-  background-color: #3A3E3B;
 }
 button a:visited {
   color: white;
 }
 button a:active {
-  color: purple;
+  color: #90DDF0;
 }
 button a {
   color: white;

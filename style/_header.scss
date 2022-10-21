@@ -1,7 +1,7 @@
 @import "variables";
 
 header{
-    background-color: $honeydew;
+    background-image: linear-gradient($honeydew, whitesmoke);
     padding-top: 25px;
 }
 
@@ -19,7 +19,7 @@ header{
 }
 
 #dropDown{
-    background-color: $honeydew;
+    background-image: linear-gradient(whitesmoke, $honeydew, whitesmoke);
     display: none;
     position: absolute;
     width: 100vw;
