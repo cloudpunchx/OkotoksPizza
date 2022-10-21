@@ -29,14 +29,11 @@
 
 .lobCursive{
     font-family: $lobster-cursive;
+    text-shadow: 1px 1px rgb(150, 150, 150);
 }
 
 .barlowFont{
     font-family: $barlow-semi-cond;
-}
-
-.textShadow{
-    text-shadow: 1px 1px rgb(150, 150, 150);
 }
 
 .blackOlive{
@@ -47,6 +44,10 @@
     width: 90vw;
 }
 
+img{
+    border-radius: 5px;
+}
+
 section{
     p{
         padding: 15px;
@@ -54,6 +55,20 @@ section{
     #hours > li{
         list-style-type: none;
     }
+    div a{
+        text-decoration: none;
+        color: $black-olive;
+    }
+    div a:visited{
+        color: $black-olive;
+    }
+    div a:active{
+        color: $middle-blue;
+    }
+}
+
+#phoneIcon{
+    width: 30px;
 }
 
 .indexSections{
@@ -64,6 +79,7 @@ section{
 
 button{
     background-color: $black-olive;
+    border-radius: 5px;
     box-shadow: 2px 1px rgb(100, 98, 98);
     padding: 5px 20px;
     margin-top: 20px;
