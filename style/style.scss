@@ -57,6 +57,7 @@ section{
     }
     div a{
         text-decoration: none;
+        font-weight: bold;
         color: $black-olive;
     }
     div a:visited{
@@ -67,8 +68,12 @@ section{
     }
 }
 
+#contactInfo{
+    margin-top: 35px;
+}
+
 #phoneIcon{
-    width: 30px;
+    width: 18px;
 }
 
 .indexSections{

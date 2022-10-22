@@ -133,6 +133,7 @@ section #hours > li {
 }
 section div a {
   text-decoration: none;
+  font-weight: bold;
   color: #3A3E3B;
 }
 section div a:visited {
@@ -142,8 +143,12 @@ section div a:active {
   color: #90DDF0;
 }
 
+#contactInfo {
+  margin-top: 35px;
+}
+
 #phoneIcon {
-  width: 30px;
+  width: 18px;
 }
 
 .indexSections {
