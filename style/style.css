@@ -168,11 +168,24 @@ button a {
 
 #foodMenu {
   display: grid;
-  justify-content: center;
-  align-content: center;
+  justify-items: center;
+  align-items: center;
   text-align: center;
 }
 #foodMenu ul li {
   list-style: none;
   margin: 25px;
+}
+#foodMenu .menuImg {
+  width: 90vw;
+  filter: brightness(70%);
+}
+
+.menuHeaders {
+  color: whitesmoke;
+  text-shadow: 1px 1px rgb(150, 150, 150);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
