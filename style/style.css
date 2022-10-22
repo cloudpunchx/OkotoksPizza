@@ -4,6 +4,8 @@
 }
 
 html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #3A3E3B;
   background-color: whitesmoke;
 }
 
@@ -35,9 +37,6 @@ header {
   width: 100vw;
   height: 100vh;
 }
-#dropDown a {
-  color: #3A3E3B;
-}
 
 #menu:focus-within {
   pointer-events: none;
@@ -56,13 +55,12 @@ nav li {
 nav li a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: black;
 }
 nav li a:visited {
-  color: black;
+  color: #3A3E3B;
 }
 nav li a:active {
-  color: #348aa7;
+  color: #005572;
 }
 
 footer {
@@ -107,14 +105,6 @@ footer #instagram {
 .lobCursive {
   font-family: "Lobster", cursive;
   text-shadow: 1px 1px rgb(150, 150, 150);
-}
-
-.barlowFont {
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.blackOlive {
-  color: #3A3E3B;
 }
 
 .slides {
@@ -174,4 +164,15 @@ button a:active {
 button a {
   color: white;
   text-decoration: none;
+}
+
+#foodMenu {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+#foodMenu ul li {
+  list-style: none;
+  margin: 25px;
 }/*# sourceMappingURL=style.css.map */

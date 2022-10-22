@@ -24,9 +24,6 @@ header{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    a{
-        color: $black-olive;
-    }
 }
 
 #menu:focus-within{
@@ -38,6 +35,7 @@ header{
     pointer-events: all;
 }
 
+// look at these A tags later
 nav li{
     list-style: none;;
     padding: 25px;
@@ -45,12 +43,11 @@ nav li{
     a{
         text-decoration: none;
         font-size: 1.5rem;
-        color: black;
     }
     a:visited{
-        color: black;
+        color: $black-olive;
     }
     a:active{
-        color: #348aa7;
+        color: #005572;
     }
 }

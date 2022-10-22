@@ -1,9 +1,12 @@
+@import "variables";
+
 *{
     margin: 0;
     padding: 0;
 }
 
 html{
-    background-color: whitesmoke;
     font-family: $barlow-semi-cond;
+    color: $black-olive;
+    background-color: whitesmoke;
 }
