@@ -6,20 +6,9 @@
 
 // NEED TO DO: WRITE COMMENTS FOR DROPDOWN 
 
-.fontBig{
-    font-size: 2rem;
-}
-
-.fontMed{
-    font-size: 1.4rem;
-}
-
-.fontSmall{
-    font-size: .8rem;
-}
-
 .lobCursive{
     font-family: $lobster-cursive;
+    font-size: 2rem;
     text-shadow: 1px 1px rgb(150, 150, 150);
 }
 
@@ -30,11 +19,13 @@
 #youtube{
     width: 400px;
     height: 225px;
+    margin-bottom: 30px;
 }
 
 #googleMap{
     width: 350px;
     height: 300px;
+    margin-bottom: 30px;
 }
 
 #arrowIcon{
@@ -46,10 +37,20 @@
     margin-bottom: 10px;
 }
 
+#phoneIcon{
+    width: 22px;
+}
+
+.phoneNumber{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
 #scrollTop{
     display: grid;
     justify-items: end;
     margin-right: 50px;
+    margin-top: 50px;
 }
 
 img{
@@ -58,11 +59,15 @@ img{
 
 section{
     text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
     p{
         padding: 15px;
     }
-    #hours > li{
+    #hours > li, p{
         list-style-type: none;
+        font-size: 1.4rem;
     }
     div a{
         text-decoration: none;
@@ -77,53 +82,31 @@ section{
     }
 }
 
-#contactInfo{
-    margin-top: 35px;
-}
-
-#phoneIcon{
-    width: 18px;
-}
-
-.indexSections{
-    display: grid;
-    justify-items: center;
-    align-items: center;
+#ourStory{
+    font-size: 1.4rem;
 }
 
 button{
-    background-color: $black-olive;
+    background-color: $honeydew;
+    font-weight: bold;
+    font-size: 1rem;
     border-radius: 5px;
-    box-shadow: 2px 1px rgb(100, 98, 98);
     padding: 5px 20px;
     margin-top: 20px;
     margin-bottom: 35px;
-    a:visited{
-        color: white;
-    }
-    a:active{
-        color: $middle-blue;
-    }
-    a{
-        color: white;
-        text-decoration: none;
-    }
+
 }
 
-
-#foodMenu{
+#indexMain{
     display: grid;
     justify-items: center;
     align-items: center;
     text-align: center;
-    ul li{
-        list-style: none;
-        margin: 25px;
-    }
-    .menuImg{
-        width: 90vw;
-        filter: brightness(60%);
-    }
+}
+
+.menuImg{
+    width: 80vw;
+    filter: brightness(60%);
 }
 
 #menuNav{
@@ -147,15 +130,39 @@ button{
 
 .menuHeaders{
     color: whitesmoke;
+    font-size: 2.0rem;
     text-shadow: 1px 1px rgb(150, 150, 150);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    a:active{
+        color: $middle-blue;
+    }
+    a:visited{
+        color: whitesmoke;
+    }
 }
 
 // relative positioning for the image within this div so I can position P tag Absolute and overlay title over img
 .menuTitle{
     position: relative;
+    margin: 25px;
 }
+
+#foodMenu{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    ul li{
+        list-style: none;
+        margin: 25px;
+    }
+}
+
 

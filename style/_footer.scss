@@ -1,6 +1,7 @@
 @import "variables";
 
 footer{
+    font-size: .8rem;
     background-image: linear-gradient(whitesmoke, $honeydew);
     display: grid;
     grid-template-columns: 40px 40px 1fr;

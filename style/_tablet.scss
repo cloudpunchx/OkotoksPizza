@@ -4,7 +4,13 @@
     #menuIcon{
         width: 40px;
     }
-    #menuNav a{
-        font-size: 2rem;
+    #foodMenu{
+        ul li{
+            font-size: 1.2rem;
+        }
+    }
+    // pointer events none is to disable the link for my phone number
+    .phoneNumber, .callButton{
+        pointer-events: none;
     }
 }

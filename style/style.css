@@ -57,7 +57,7 @@ nav li {
 }
 nav li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 nav li a:visited {
   color: #3A3E3B;
@@ -67,6 +67,7 @@ nav li a:active {
 }
 
 footer {
+  font-size: 0.8rem;
   background-image: linear-gradient(whitesmoke, #D0E1D4);
   display: grid;
   grid-template-columns: 40px 40px 1fr;
@@ -87,24 +88,16 @@ footer #instagram {
   #menuIcon {
     width: 40px;
   }
-  #menuNav a {
-    font-size: 2rem;
+  #foodMenu ul li {
+    font-size: 1.2rem;
+  }
+  .phoneNumber, .callButton {
+    pointer-events: none;
   }
 }
-.fontBig {
-  font-size: 2rem;
-}
-
-.fontMed {
-  font-size: 1.4rem;
-}
-
-.fontSmall {
-  font-size: 0.8rem;
-}
-
 .lobCursive {
   font-family: "Lobster", cursive;
+  font-size: 2rem;
   text-shadow: 1px 1px rgb(150, 150, 150);
 }
 
@@ -115,11 +108,13 @@ footer #instagram {
 #youtube {
   width: 400px;
   height: 225px;
+  margin-bottom: 30px;
 }
 
 #googleMap {
   width: 350px;
   height: 300px;
+  margin-bottom: 30px;
 }
 
 #arrowIcon {
@@ -131,10 +126,20 @@ footer #instagram {
   margin-bottom: 10px;
 }
 
+#phoneIcon {
+  width: 22px;
+}
+
+.phoneNumber {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
 #scrollTop {
   display: grid;
   justify-items: end;
   margin-right: 50px;
+  margin-top: 50px;
 }
 
 img {
@@ -143,12 +148,16 @@ img {
 
 section {
   text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 section p {
   padding: 15px;
 }
-section #hours > li {
+section #hours > li, section p {
   list-style-type: none;
+  font-size: 1.4rem;
 }
 section div a {
   text-decoration: none;
@@ -162,51 +171,29 @@ section div a:active {
   color: #90DDF0;
 }
 
-#contactInfo {
-  margin-top: 35px;
-}
-
-#phoneIcon {
-  width: 18px;
-}
-
-.indexSections {
-  display: grid;
-  justify-items: center;
-  align-items: center;
+#ourStory {
+  font-size: 1.4rem;
 }
 
 button {
-  background-color: #3A3E3B;
+  background-color: #D0E1D4;
+  font-weight: bold;
+  font-size: 1rem;
   border-radius: 5px;
-  box-shadow: 2px 1px rgb(100, 98, 98);
   padding: 5px 20px;
   margin-top: 20px;
   margin-bottom: 35px;
 }
-button a:visited {
-  color: white;
-}
-button a:active {
-  color: #90DDF0;
-}
-button a {
-  color: white;
-  text-decoration: none;
-}
 
-#foodMenu {
+#indexMain {
   display: grid;
   justify-items: center;
   align-items: center;
   text-align: center;
 }
-#foodMenu ul li {
-  list-style: none;
-  margin: 25px;
-}
-#foodMenu .menuImg {
-  width: 90vw;
+
+.menuImg {
+  width: 80vw;
   filter: brightness(60%);
 }
 
@@ -231,13 +218,36 @@ button a {
 
 .menuHeaders {
   color: whitesmoke;
+  font-size: 2rem;
   text-shadow: 1px 1px rgb(150, 150, 150);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.menuHeaders a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.menuHeaders a:active {
+  color: #90DDF0;
+}
+.menuHeaders a:visited {
+  color: whitesmoke;
+}
 
 .menuTitle {
   position: relative;
+  margin: 25px;
+}
+
+#foodMenu {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+#foodMenu ul li {
+  list-style: none;
+  margin: 25px;
 }/*# sourceMappingURL=style.css.map */
