@@ -11,6 +11,7 @@ header{
 }
 
 #menuIcon{
+    width: 30px;
     margin-left: 5vw;
 }
 
@@ -24,6 +25,7 @@ header{
     position: absolute;
     width: 100vw;
     height: 100vh;
+    z-index: 1;
 }
 
 #menu:focus-within{

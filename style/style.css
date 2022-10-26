@@ -4,9 +4,10 @@
 }
 
 html {
-  font-family: "Barlow Semi Condensed", sans-serif;
   color: #3A3E3B;
   background-color: whitesmoke;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -20,6 +21,7 @@ header {
 }
 
 #menuIcon {
+  width: 30px;
   margin-left: 5vw;
 }
 
@@ -36,6 +38,7 @@ header {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 
 #menu:focus-within {
@@ -80,16 +83,14 @@ footer #instagram {
   height: 30px;
 }
 
-.fluorish {
-  width: 80vw;
-  margin-left: 10vw;
-  margin-top: 2vh;
+@media only screen and (min-width: 600px) {
+  #menuIcon {
+    width: 40px;
+  }
+  #menuNav a {
+    font-size: 2rem;
+  }
 }
-
-.textAlign {
-  text-align: center;
-}
-
 .fontBig {
   font-size: 2rem;
 }
@@ -111,10 +112,38 @@ footer #instagram {
   width: 90vw;
 }
 
+#youtube {
+  width: 400px;
+  height: 225px;
+}
+
+#googleMap {
+  width: 350px;
+  height: 300px;
+}
+
+#arrowIcon {
+  width: 40px;
+}
+
+.arrowIconSmall {
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+#scrollTop {
+  display: grid;
+  justify-items: end;
+  margin-right: 50px;
+}
+
 img {
   border-radius: 5px;
 }
 
+section {
+  text-align: center;
+}
 section p {
   padding: 15px;
 }
@@ -178,7 +207,26 @@ button a {
 }
 #foodMenu .menuImg {
   width: 90vw;
-  filter: brightness(70%);
+  filter: brightness(60%);
+}
+
+#menuNav {
+  margin: 20px;
+}
+#menuNav li {
+  display: inline;
+  padding: 0px;
+  margin: 2.5px;
+}
+#menuNav a:visited {
+  color: #3A3E3B;
+}
+#menuNav a:active {
+  color: #90DDF0;
+}
+#menuNav a {
+  color: #3A3E3B;
+  font-size: 1.2rem;
 }
 
 .menuHeaders {
@@ -188,4 +236,8 @@ button a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.menuTitle {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

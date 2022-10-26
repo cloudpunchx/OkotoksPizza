@@ -15,10 +15,10 @@
         <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <img id="logo" src="/media/pizzeriaLogoName.png" alt="Cloudpunch Pizzeria Logo">
         <div tabindex="0" id="menu">
-            <label id="menuIcon"><img src="/media/menuIcon.png"></label>
+            <label><img id="menuIcon" src="/media/menuIcon.png"></label>
             <div id="dropDown"> 
                 <nav class="lobCursive">
                     <li><a class="fontBig" href="../index.html">Home</a></li>
@@ -31,64 +31,128 @@
     </header>
     <main>
         <section id="foodMenu">
+            <nav id="menuNav">
+                <li><a href="#antipasto">ANTIPASTO |</a></li>
+                <li><a href="#pizzaRossa">PIZZA ROSSA |</a></li>
+                <li><a href="#pizzaBianca">PIZZA BIANCA |</a></li>
+                <li><a href="#dolci">DOLCI |</a></li>
+                <li><a href="#drinks">DRINKS |</a></li>
+                <li><a href="#cocktails">COCKTAILS |</a></li>
+                <li><a href="#beer">BEER |</a></li>
+                <li><a href="#redWine">RED WINE |</a></li>
+                <li><a href="#whiteWine">WHITE WINE |</a></li>
+            </nav>
+            <div>
+                <a href="tel:4035555555"><img id="phoneIcon" src="/media/phoneIcon.png" alt="Black Phone Icon"> 403-555-5555</a>
+            </div>
             <p class="lobCursive fontBig">Food Menu</p>
-            <img class="menuImg" src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" alt="Bruschetta">
-            <p class="menuHeaders fontMed">APPETIZERS</p>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" alt="Bruschetta">
+                <div class="menuHeaders fontBig">
+                    <p id="antipasto">ANTIPASTO</p>
+                </div>
+            </div>
             <ul>
                 <li>House Made Soup of the Day<br>Ask your server for the daily selection<br>$6 | $9</li>
                 <li>Ceasar Salad<br>Romaine lettuce with croutons, house made dressing, parmesan cheese<br>$9 | $12</li>
                 <li>Olives<br>Selection of mediterranean olives<br>$6</li>
                 <li>Bruschetta<br>Fresh roma tomatoes, garlic, basil, evoo<br>$12</li>
             </ul>
-            <p class="fontMed">PIZZA ROSSA</p>
-            <img class="menuImg" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80" alt="Margherita Pizza close up">
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80" alt="Margherita Pizza close up">
+                <div class="menuHeaders fontBig">
+                    <p id="pizzaRossa">PIZZA ROSSA</p>
+                </div>
+            </div>
             <ul>
                 <li>Margherita<br>Fior-di-latte, basil, grana padano, evoo<br>$16</li>
                 <li>Napoletana<br>Roma tomatoes, fior-di-latte, oregano, capers, anchovy, evoo<br>$20</li>
                 <li>Lecce<br>Fior-di-latte, basil, grana padano, soppressata (spicy salami), chili salt<br>$20</li>
                 <li>Capricciosa<br>Roma tomatoes, fior-di-latte, mushroom, artichoke, Italian ham, black olives, basil, evoo<br>$20</li>
             </ul>
-            <p class="fontMed">PIZZA BIANCA</p>
-            <img class="menuImg" src="https://images.unsplash.com/photo-1558138838-6d6290c056c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Pistacchiosa Pizza">
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.unsplash.com/photo-1558138838-6d6290c056c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Pistacchiosa Pizza">
+                <div class="menuHeaders fontBig">
+                    <p id="pizzaBianca">PIZZA BIANCA</p>
+                </div>
+            </div>
             <ul>
                 <li>Quattro Formaggi<br>Fior-di-latte, parmigiano, provolone, gorgonzola, evoo<br>$20</li>
                 <li>Funghi<br>Fior-di-latte, mushroom, garlic, cracked black pepper, truffle oil, arugula, evoo<br>$20</li>
                 <li>Primavera<br>Fior-di-latte, cherry tomato, arugula, prosciutto, parmigiano, balsamic glaze, evoo<br>$20</li>
                 <li>Pistacchiosa<br>Ricotta, fior-di-latte, pistachio pesto, mortadella, basil, lemon zest, evoo<br>$20</li>
             </ul>
-            <p class="fontMed">DOLCI</p>
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tiramisu">
+                <div class="menuHeaders fontBig">
+                    <p id="dolci">DOLCI</p>
+                </div>
+            </div>
             <ul>
                 <li>Tiramisu<br>Ladyfingers soaked in espresso, layered with mascarpone cream and dusted with belgian chocolate<br>$10</li>
                 <li>Neapolitan Rum Babà<br>A small cake soaked in citrusy rum syrup, glazed with apricot jam served with vanilla bean gelato<br>$14</li>
             </ul>
-            <p class="lobCursive fontBig">Drink Menu</p>
-            <p class="fontMed">NON-ALCOHOLIC</p>
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <p id="drinks" class="lobCursive fontBig">Drink Menu</p>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.pexels.com/photos/357577/pexels-photo-357577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink with limes, top down view">
+                <div class="menuHeaders fontBig">
+                    <p>NON-ALCOHOLIC</p>
+                </div>
+            </div>
             <ul>
                 <li>San Pellegrino Sparkling Water<br>350ml $4 | 750ml $7</li>
                 <li>San Pellegrino Soft Drinks<br>Lemon, Orange<br>$4</li>
                 <li>Soft Drinks<br>Pepsi, Root Beer, Dr Pepper<br>$3</li>
             </ul>
-            <p class="fontMed">COCKTAILS</p>
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.unsplash.com/photo-1585386116149-22ad0453f631?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Aperol Spritz drinks lined up in a row">
+                <div class="menuHeaders fontBig">
+                    <p id="cocktails">COCKTAILS</p>
+                </div>
+            </div>
             <ul>
                 <li>Aperol Spritz<br>5oz Aperol, prosecco, sparkling water<br>$12</li>
                 <li>Limoncello Spritz<br>2oz Limoncello, 3oz prosecco, sparkling water<br>$12</li>
                 <li>Negroni<br>3oz gin, campari, sweet vermouth<br>$9</li>
                 <li>Moscow Mule<br>1oz vodka, ginger beer, lime<br>$9</li>
             </ul>
-            <p class="fontMed">BOTTLED BEER</p>
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.unsplash.com/photo-1660653910059-a6bd4bfe8008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" alt="Peroni Beer Bottle next to poured glass of beer">
+                <div class="menuHeaders fontBig">
+                    <p id="beer">BOTTLED BEER</p>
+                </div>
+            </div>
             <ul>
                 <li>Domestic<br>$6</li>
                 <li>Import<br>$7</li>
                 <li>Ciders<br>$8</li>
             </ul>
-            <p class="fontMed">RED WINE</p>
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://img.freepik.com/free-photo/glass-red-wine-bottle-bar-counter_107420-65845.jpg?w=1800&t=st=1666739752~exp=1666740352~hmac=50cc1980ae4b172747d09fe31d4b32275ff54cb41ee1eb78f7a397035a05992c" alt="Red wine in glass next to bottle on bar counter">
+                <div class="menuHeaders fontBig">
+                    <p id="redWine">RED WINE</p>
+                </div>
+            </div>
             <ul>
                 <li>Brunello di Montalcino | Montechiaro Winery<br>Siena, Italy<br>Bottle $50</li>
                 <li>Arteliquida Rosso | Montechiaro Winery<br>Siena, Italy<br>Bottle $50</li>
                 <li>2019 Merlot | La Frenz Winery<br>Penticton, BC<br>Bottle $30</li>
                 <li>2020 Pinot Noir | CedarCreek Winery<br>Kelowna, BC<br>Bottle $30</li>
             </ul>
-            <p class="fontMed">WHITE WINE</p>
+            <a href="#top"><img class="arrowIconSmall" src="/media/upArrowSmall.png" alt="Small Up Arrow"></a>
+            <div class="menuTitle">
+                <img class="menuImg" src="https://images.unsplash.com/photo-1590229926879-d18865f99541?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" alt="Close up of chilled white wine in glass">
+                <div class="menuHeaders fontBig">
+                    <p id="whiteWine">WHITE WINE</p>
+                </div>
+            </div>
             <ul>
                 <li>Arteliquida Bianco | Montechiaro Winery<br>Siena, Italy<br>Bottle $50</li>
                 <li>2021 Sauvignon Blanc | La Frenz Winery<br>Penticton, BC<br>Bottle $30</li>
@@ -96,11 +160,14 @@
                 <li>2020 Chardonnay | CedarCreek Winery<br>Kelowna, BC<br>Bottle $24</li>
             </ul>
         </section>
+        <div id="scrollTop">
+            <a href="#top"><img id="arrowIcon" src="/media/upArrow.png" alt="Up Arrow"></a>
+        </div>
     </main>
     <footer>
         <a href="https://facebook.com" target="_blank"><img id="facebook" src="/media/facebookIcon.png" alt="Facebook Logo"></a>
         <a href="https://instagram.com" target="_blank"><img id="instagram" src="/media/instagramIcon.png" alt="Instagram Logo"></a>
-        <p class="fontSmall textAlign">&copy Copyright 2022 Cloudpunch Media</p>
+        <p class="fontSmall">&copy Copyright 2022 Cloudpunch Media</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,10 @@
+// tablet media query
+
+@media only screen and (min-width: 600px) {
+    #menuIcon{
+        width: 40px;
+    }
+    #menuNav a{
+        font-size: 2rem;
+    }
+}
