@@ -64,7 +64,7 @@ nav li a:visited {
   color: #3A3E3B;
 }
 nav li a:active {
-  color: #005572;
+  color: #90DDF0;
 }
 
 footer {
@@ -83,24 +83,6 @@ footer #facebook {
 footer #instagram {
   width: 30px;
   height: 30px;
-}
-
-@media only screen and (min-width: 1000px) {
-  #logo {
-    width: 20vw;
-    margin-left: 40vw;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  #logo {
-    width: 15vw;
-    margin-left: 42.5vw;
-  }
-}
-.menuImg {
-  width: 80vw;
-  filter: brightness(60%);
-  border-radius: 5px;
 }
 
 .lobCursive {
@@ -205,7 +187,7 @@ button a {
   display: grid;
   justify-items: center;
   align-items: center;
-  text-align: center;
+  row-gap: 25px;
 }
 
 #menuNav {
@@ -250,9 +232,20 @@ button a {
   font-size: 2rem;
 }
 
+.menuImg, .contactImg {
+  height: 25vh;
+  filter: brightness(60%);
+  border-radius: 5px;
+}
+
+.ourStoryImg {
+  height: 20vh;
+  filter: brightness(60%);
+  border-radius: 5px;
+}
+
 .menuTitle {
   position: relative;
-  margin: 25px;
 }
 
 #foodMenu {
@@ -280,18 +273,54 @@ button a {
   .phoneNumber, .callButton {
     pointer-events: none;
   }
-  .sectionColumns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  nav li a {
+    font-size: 2.5rem;
   }
-  .article1 {
-    display: grid;
+  #indexMain {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
   }
   .menuImg {
-    width: 650px;
+    height: 24vh;
+  }
+  .sectionColumns {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .contactImg {
+    height: 40vh;
   }
   #googleMap {
     width: 375px;
     height: 325px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #logo {
+    width: 20vw;
+    margin-left: 40vw;
+  }
+  .menuImg {
+    height: 35vh;
+  }
+  .contactImg {
+    height: 45vh;
+  }
+  #googleMap {
+    width: 500px;
+    height: 400px;
+  }
+  #youtube {
+    width: 480px;
+    height: 270px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #logo {
+    width: 15vw;
+    margin-left: 42.5vw;
+  }
+  .menuImg {
+    height: 42vh;
   }
 }/*# sourceMappingURL=style.css.map */
