@@ -1,19 +1,20 @@
 @use "general";
 @use "header";
 @use "footer";
-@use "tablet";
+@use "desktop";
 @import "variables";
 
 // NEED TO DO: WRITE COMMENTS FOR DROPDOWN 
+.menuImg{
+    width: 80vw;
+    filter: brightness(60%);
+    border-radius: 5px;
+}
 
 .lobCursive{
     font-family: $lobster-cursive;
     font-size: 2rem;
     text-shadow: 1px 1px rgb(150, 150, 150);
-}
-
-.slides{
-    width: 90vw;
 }
 
 #youtube{
@@ -53,8 +54,8 @@
     margin-top: 50px;
 }
 
-img{
-    border-radius: 5px;
+main{
+    text-align: center;
 }
 
 section{
@@ -65,9 +66,10 @@ section{
     p{
         padding: 15px;
     }
-    #hours > li, p{
+    #hours > li, p, .phoneNumber{
         list-style-type: none;
         font-size: 1.4rem;
+        position: relative;
     }
     div a{
         text-decoration: none;
@@ -94,7 +96,17 @@ button{
     padding: 5px 20px;
     margin-top: 20px;
     margin-bottom: 35px;
-
+    a:visited{
+        color: $black-olive;
+    }
+    a:active{
+        color: $middle-blue;
+    }
+    a{
+        color: $black-olive;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
 }
 
 #indexMain{
@@ -102,11 +114,6 @@ button{
     justify-items: center;
     align-items: center;
     text-align: center;
-}
-
-.menuImg{
-    width: 80vw;
-    filter: brightness(60%);
 }
 
 #menuNav{
@@ -130,7 +137,7 @@ button{
 
 .menuHeaders{
     color: whitesmoke;
-    font-size: 2.0rem;
+    font-size: 2rem;
     text-shadow: 1px 1px rgb(150, 150, 150);
     position: absolute;
     top: 50%;
@@ -145,6 +152,9 @@ button{
     }
     a:visited{
         color: whitesmoke;
+    }
+    p{
+        font-size: 2rem;
     }
 }
 
@@ -165,4 +175,36 @@ button{
     }
 }
 
+@media only screen and (min-width: 700px) {
+    #logo{
+        width: 30vw;
+        margin-left: 35vw;
+    }
+    #menuIcon{
+        width: 40px;
+    }
+    #foodMenu{
+        ul li{
+            font-size: 1.2rem;
+        }
+    }
+    // pointer events none is to disable the link for my phone number
+    .phoneNumber, .callButton{
+        pointer-events: none;
+    }
+    .sectionColumns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .article1{
+        display: grid;
+    }
+    .menuImg{
+        width: 650px;
+    }
+    #googleMap{
+        width: 375px;
+        height: 325px;
+    }
+}
 

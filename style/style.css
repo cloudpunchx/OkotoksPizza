@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -84,25 +85,28 @@ footer #instagram {
   height: 30px;
 }
 
-@media only screen and (min-width: 600px) {
-  #menuIcon {
-    width: 40px;
-  }
-  #foodMenu ul li {
-    font-size: 1.2rem;
-  }
-  .phoneNumber, .callButton {
-    pointer-events: none;
+@media only screen and (min-width: 1000px) {
+  #logo {
+    width: 20vw;
+    margin-left: 40vw;
   }
 }
+@media only screen and (min-width: 1400px) {
+  #logo {
+    width: 15vw;
+    margin-left: 42.5vw;
+  }
+}
+.menuImg {
+  width: 80vw;
+  filter: brightness(60%);
+  border-radius: 5px;
+}
+
 .lobCursive {
   font-family: "Lobster", cursive;
   font-size: 2rem;
   text-shadow: 1px 1px rgb(150, 150, 150);
-}
-
-.slides {
-  width: 90vw;
 }
 
 #youtube {
@@ -142,8 +146,8 @@ footer #instagram {
   margin-top: 50px;
 }
 
-img {
-  border-radius: 5px;
+main {
+  text-align: center;
 }
 
 section {
@@ -155,9 +159,10 @@ section {
 section p {
   padding: 15px;
 }
-section #hours > li, section p {
+section #hours > li, section p, section .phoneNumber {
   list-style-type: none;
   font-size: 1.4rem;
+  position: relative;
 }
 section div a {
   text-decoration: none;
@@ -184,17 +189,23 @@ button {
   margin-top: 20px;
   margin-bottom: 35px;
 }
+button a:visited {
+  color: #3A3E3B;
+}
+button a:active {
+  color: #90DDF0;
+}
+button a {
+  color: #3A3E3B;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
 
 #indexMain {
   display: grid;
   justify-items: center;
   align-items: center;
   text-align: center;
-}
-
-.menuImg {
-  width: 80vw;
-  filter: brightness(60%);
 }
 
 #menuNav {
@@ -235,6 +246,9 @@ button {
 .menuHeaders a:visited {
   color: whitesmoke;
 }
+.menuHeaders p {
+  font-size: 2rem;
+}
 
 .menuTitle {
   position: relative;
@@ -250,4 +264,34 @@ button {
 #foodMenu ul li {
   list-style: none;
   margin: 25px;
+}
+
+@media only screen and (min-width: 700px) {
+  #logo {
+    width: 30vw;
+    margin-left: 35vw;
+  }
+  #menuIcon {
+    width: 40px;
+  }
+  #foodMenu ul li {
+    font-size: 1.2rem;
+  }
+  .phoneNumber, .callButton {
+    pointer-events: none;
+  }
+  .sectionColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .article1 {
+    display: grid;
+  }
+  .menuImg {
+    width: 650px;
+  }
+  #googleMap {
+    width: 375px;
+    height: 325px;
+  }
 }/*# sourceMappingURL=style.css.map */
