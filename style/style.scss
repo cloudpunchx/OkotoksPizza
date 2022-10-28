@@ -202,12 +202,8 @@ button{
             font-size: 2.5rem;
         }
     }
-    #indexMain{
-        grid-template-columns: 1fr 1fr;
-        row-gap: 25px;
-    }
     .menuImg{
-        height: 24vh;
+        height: 40vh;
     }
     .sectionColumns{
         grid-template-columns: 1fr 1.5fr;
@@ -225,6 +221,10 @@ button{
     #logo{
         width: 20vw;
         margin-left: 40vw;
+    }
+    #indexMain{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 25px;
     }
     .menuImg{
         height: 35vh;
