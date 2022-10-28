@@ -12,7 +12,9 @@ html {
 }
 
 header {
-  background-image: linear-gradient(#D0E1D4, whitesmoke);
+  background-image: url(https://images.unsplash.com/photo-1596142332133-327e2a0ff006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: 100vw 40vh;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   padding-top: 25px;
 }
 
@@ -72,6 +74,7 @@ nav li a:active {
 }
 
 #navBarHorizontal nav {
+  background-image: linear-gradient(#D0E1D4, whitesmoke);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   border: 1px #3A3E3B solid;
@@ -126,6 +129,11 @@ footer #instagram {
   font-family: "Lobster", cursive;
   font-size: 2rem;
   text-shadow: 1px 1px rgb(150, 150, 150);
+}
+
+.largeText {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px rgb(32, 110, 55);
 }
 
 #youtube {
@@ -337,7 +345,7 @@ button a {
     row-gap: 25px;
   }
   .menuImg {
-    height: 35vh;
+    height: 22vh;
   }
   .contactImg {
     height: 45vh;
@@ -351,6 +359,19 @@ button a {
     height: 270px;
     margin-bottom: 30px;
   }
+  #menuBreakdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #menuBreakdown #food {
+    grid-column: 1/span 2;
+  }
+  #menuBreakdown #drinks {
+    grid-column: 1/span 2;
+  }
+  #menuBreakdown .arrowIconSmall {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1400px) {
   #logo {
@@ -358,6 +379,6 @@ button a {
     margin-left: 42.5vw;
   }
   .menuImg {
-    height: 42vh;
+    height: 25vh;
   }
 }/*# sourceMappingURL=style.css.map */
