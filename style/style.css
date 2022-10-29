@@ -5,17 +5,17 @@
 }
 
 html {
-  color: #3A3E3B;
+  color: #2f3130;
   background-color: whitesmoke;
   font-family: "Barlow Semi Condensed", sans-serif;
   scroll-behavior: smooth;
 }
 
 header {
-  background-image: url(https://images.unsplash.com/photo-1596142332133-327e2a0ff006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-  background-size: 100vw 40vh;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-  padding-top: 25px;
+  background-image: url(https://images.unsplash.com/photo-1596142332133-327e2a0ff006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  box-shadow: inset 0 0 0 1000px rgba(250, 250, 250, 0.116);
+  background-size: 100vw 100vh;
+  background-position: top;
 }
 
 #logo {
@@ -26,6 +26,7 @@ header {
 #menuIcon {
   width: 30px;
   margin-left: 5vw;
+  background-color: rgba(255, 255, 255, 0.432);
 }
 
 #menu {
@@ -35,17 +36,12 @@ header {
           user-select: none;
 }
 
-#menu:focus-within {
-  pointer-events: none;
-}
-
 #menu:focus-within #dropDown {
   display: block;
-  pointer-events: all;
 }
 
 #dropDown {
-  background-image: linear-gradient(whitesmoke, #D0E1D4, whitesmoke);
+  background-color: whitesmoke;
   display: none;
   position: absolute;
   width: 100vw;
@@ -60,6 +56,21 @@ header {
   font-size: 2rem;
 }
 
+#navBarHorizontal nav {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#navBarHorizontal nav li {
+  padding: 0;
+  margin: 0 auto;
+}
+#navBarHorizontal nav a {
+  color: rgb(93, 124, 72);
+  text-shadow: 1px 1px rgb(255, 250, 250);
+  font-size: 1.7rem;
+}
+
 nav li {
   list-style: none;
 }
@@ -67,26 +78,10 @@ nav li a {
   text-decoration: none;
 }
 nav li a:visited {
-  color: #3A3E3B;
+  color: #2f3130;
 }
 nav li a:active {
   color: #90DDF0;
-}
-
-#navBarHorizontal nav {
-  background-image: linear-gradient(#D0E1D4, whitesmoke);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  border: 1px #3A3E3B solid;
-  margin-top: 10px;
-  padding: 10px;
-}
-#navBarHorizontal nav li {
-  padding: 0;
-  margin: 0 auto;
-}
-#navBarHorizontal nav a {
-  font-size: 1.7rem;
 }
 
 @media only screen and (min-width: 1px) {
@@ -125,12 +120,6 @@ footer #instagram {
   height: 30px;
 }
 
-.lobCursive {
-  font-family: "Lobster", cursive;
-  font-size: 2rem;
-  text-shadow: 1px 1px rgb(150, 150, 150);
-}
-
 .largeText {
   font-size: 2.5rem;
   text-shadow: 1px 1px rgb(32, 110, 55);
@@ -165,6 +154,17 @@ footer #instagram {
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
+.phoneNumber a:visited {
+  color: #2f3130;
+}
+.phoneNumber a:active {
+  color: #90DDF0;
+}
+.phoneNumber a {
+  color: #2f3130;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
 
 #scrollTop {
   display: grid;
@@ -194,10 +194,10 @@ section #hours > li, section p, section .phoneNumber {
 section div a {
   text-decoration: none;
   font-weight: bold;
-  color: #3A3E3B;
+  color: #2f3130;
 }
 section div a:visited {
-  color: #3A3E3B;
+  color: #2f3130;
 }
 section div a:active {
   color: #90DDF0;
@@ -217,13 +217,13 @@ button {
   margin-bottom: 35px;
 }
 button a:visited {
-  color: #3A3E3B;
+  color: #2f3130;
 }
 button a:active {
   color: #90DDF0;
 }
 button a {
-  color: #3A3E3B;
+  color: #2f3130;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -231,7 +231,6 @@ button a {
 #indexMain {
   display: grid;
   justify-items: center;
-  align-items: center;
   row-gap: 25px;
 }
 
@@ -244,13 +243,13 @@ button a {
   margin: 2.5px;
 }
 #menuNav a:visited {
-  color: #3A3E3B;
+  color: #2f3130;
 }
 #menuNav a:active {
   color: #90DDF0;
 }
 #menuNav a {
-  color: #3A3E3B;
+  color: #2f3130;
   font-size: 1.2rem;
 }
 
@@ -277,16 +276,14 @@ button a {
   font-size: 2rem;
 }
 
-.menuImg, .contactImg {
-  height: 25vh;
+.menuImg, .indexImg, .contactImg {
+  height: 20vh;
   filter: brightness(60%);
   border-radius: 5px;
 }
 
-.ourStoryImg {
-  height: 20vh;
-  filter: brightness(60%);
-  border-radius: 5px;
+.contactImg {
+  margin-top: 10px;
 }
 
 .menuTitle {
@@ -321,28 +318,24 @@ button a {
   nav li a {
     font-size: 2.5rem;
   }
-  .menuImg {
-    height: 40vh;
+  .menuImg, .indexImg, .contactImg {
+    height: 30vh;
   }
   .sectionColumns {
     grid-template-columns: 1fr 1.5fr;
   }
-  .contactImg {
-    height: 40vh;
-  }
   #googleMap {
     width: 375px;
     height: 325px;
+  }
+  #indexIntro {
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 1000px) {
   #logo {
     width: 20vw;
     margin-left: 40vw;
-  }
-  #indexMain {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 25px;
   }
   .menuImg {
     height: 22vh;
@@ -372,13 +365,27 @@ button a {
   #menuBreakdown .arrowIconSmall {
     display: none;
   }
+  #indexMain {
+    grid-template-columns: 1fr 1fr;
+  }
+  #indexMain .phoneNumber {
+    grid-column: 1/span 2;
+  }
+  #indexMain #indexIntro {
+    grid-column: 1/span 2;
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+  #indexMain .indexImg {
+    height: 300px;
+  }
 }
 @media only screen and (min-width: 1400px) {
   #logo {
     width: 15vw;
     margin-left: 42.5vw;
   }
-  .menuImg {
-    height: 25vh;
+  .menuImg, .indexImg {
+    height: 50vh;
   }
 }/*# sourceMappingURL=style.css.map */

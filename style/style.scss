@@ -3,13 +3,6 @@
 @use "footer";
 @import "variables";
 
-// NEED TO DO: WRITE COMMENTS FOR DROPDOWN 
-.lobCursive{
-    font-family: $lobster-cursive;
-    font-size: 2rem;
-    text-shadow: 1px 1px rgb(150, 150, 150);
-}
-
 .largeText{
     font-size: 2.5rem;
     text-shadow: 1px 1px rgb(32, 110, 55);
@@ -43,6 +36,17 @@
 .phoneNumber{
     margin-bottom: 20px;
     font-size: 1.1rem;
+    a:visited{
+        color: $black-olive;
+    }
+    a:active{
+        color: $middle-blue;
+    }
+    a{
+        color: $black-olive;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
 }
 
 #scrollTop{
@@ -110,7 +114,6 @@ button{
 #indexMain{
     display: grid;
     justify-items: center;
-    align-items: center;
     row-gap: 25px;
 }
 
@@ -133,6 +136,9 @@ button{
     }
 }
 
+// position absolute makes it positioned to nearest positioned ancestor, which is .menuTitle set to Relative
+// top and left 50% to get the text positioned properly, with transform/translate it can stay centered
+// transform translate is 50% to the left (left because of -50%) and 50% up (up because of -50%) from its current position
 .menuHeaders{
     color: whitesmoke;
     font-size: 2rem;
@@ -156,18 +162,16 @@ button{
     }
 }
 
-.menuImg, .contactImg{
-    height: 25vh;
-    filter: brightness(60%);
-    border-radius: 5px;
-}
-
-.ourStoryImg{
+// I used filter to shadow my images instead of box-shadow inset because I was able to achieve the color I liked with filter faster than box-shadow
+.menuImg, .indexImg, .contactImg{
     height: 20vh;
     filter: brightness(60%);
     border-radius: 5px;
 }
 
+.contactImg{
+    margin-top: 10px;
+}
 
 // relative positioning for the image within this div so I can position P tag Absolute and overlay title over img
 .menuTitle{
@@ -207,18 +211,18 @@ button{
             font-size: 2.5rem;
         }
     }
-    .menuImg{
-        height: 40vh;
+    .menuImg, .indexImg, .contactImg{
+        height: 30vh;
     }
     .sectionColumns{
         grid-template-columns: 1fr 1.5fr;
     }
-    .contactImg{
-        height: 40vh;
-    }
     #googleMap{
         width: 375px;
         height: 325px;
+    }
+    #indexIntro{
+        font-size: 1.2rem;
     }
 }
 
@@ -226,10 +230,6 @@ button{
     #logo{
         width: 20vw;
         margin-left: 40vw;
-    }
-    #indexMain{
-        grid-template-columns: 1fr 1fr;
-        row-gap: 25px;
     }
     .menuImg{
         height: 22vh;
@@ -249,6 +249,7 @@ button{
     #menuBreakdown{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        // grid column 1 span 2 is me telling ID food and drinks to start at column 1 and span across to 2
         #food{
             grid-column: 1 / span 2;
         }
@@ -259,7 +260,20 @@ button{
             display: none;
         }
     }
-
+    #indexMain{
+        grid-template-columns: 1fr 1fr;
+        .phoneNumber{
+            grid-column: 1 / span 2;
+        }
+        #indexIntro{
+            grid-column: 1 / span 2;
+            font-size: 1.5rem;
+            margin-top: 25px;
+        }
+        .indexImg{
+            height: 300px;
+        }
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -267,8 +281,8 @@ button{
         width: 15vw;
         margin-left: 42.5vw;
     }
-    .menuImg{
-        height: 25vh;
+    .menuImg, .indexImg{
+        height: 50vh;
     }
 }
 
