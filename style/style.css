@@ -12,21 +12,35 @@ html {
 }
 
 header {
-  background-image: url(https://images.unsplash.com/photo-1596142332133-327e2a0ff006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
-  box-shadow: inset 0 0 0 1000px rgba(250, 250, 250, 0.116);
-  background-size: 100vw 100vh;
-  background-position: top;
+  background-image: url(/media/olive-branch.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.192);
 }
 
 #logo {
   width: 40vw;
   margin-left: 30vw;
+  margin-top: 25px;
+  background-color: rgba(245, 245, 245, 0.459);
 }
 
 #menuIcon {
   width: 30px;
   margin-left: 5vw;
   background-color: rgba(255, 255, 255, 0.432);
+}
+
+#hamburgerNav label {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  margin-left: 20px;
+}
+
+#dropdown {
+  display: none;
 }
 
 #menu {
@@ -57,6 +71,7 @@ header {
 }
 
 #navBarHorizontal nav {
+  background-color: rgba(245, 245, 245, 0.459);
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -66,8 +81,7 @@ header {
   margin: 0 auto;
 }
 #navBarHorizontal nav a {
-  color: rgb(93, 124, 72);
-  text-shadow: 1px 1px rgb(255, 250, 250);
+  font-weight: bold;
   font-size: 1.7rem;
 }
 
@@ -75,12 +89,16 @@ nav li {
   list-style: none;
 }
 nav li a {
+  color: #2f3130;
   text-decoration: none;
 }
 nav li a:visited {
   color: #2f3130;
 }
 nav li a:active {
+  color: #90DDF0;
+}
+nav li a:hover {
   color: #90DDF0;
 }
 
@@ -104,7 +122,7 @@ nav li a:active {
 }
 footer {
   font-size: 0.8rem;
-  background-image: linear-gradient(whitesmoke, #D0E1D4);
+  background-image: linear-gradient(whitesmoke, #a7c957);
   display: grid;
   grid-template-columns: 40px 40px 1fr;
   justify-items: center;
@@ -146,13 +164,12 @@ footer #instagram {
   margin-bottom: 10px;
 }
 
-#phoneIcon {
-  width: 22px;
-}
-
 .phoneNumber {
   margin-bottom: 20px;
   font-size: 1.1rem;
+}
+.phoneNumber #phoneIcon {
+  width: 22px;
 }
 .phoneNumber a:visited {
   color: #2f3130;
@@ -208,22 +225,28 @@ section div a:active {
 }
 
 button {
-  background-color: #D0E1D4;
-  font-weight: bold;
+  background-color: #a7c957;
+  opacity: 1;
   font-size: 1rem;
   border-radius: 5px;
   padding: 5px 20px;
   margin-top: 20px;
   margin-bottom: 35px;
 }
+button:hover {
+  opacity: 0.8;
+}
+button a:hover {
+  color: whitesmoke;
+}
 button a:visited {
-  color: #2f3130;
+  color: black;
 }
 button a:active {
   color: #90DDF0;
 }
 button a {
-  color: #2f3130;
+  color: black;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -232,25 +255,6 @@ button a {
   display: grid;
   justify-items: center;
   row-gap: 25px;
-}
-
-#menuNav {
-  margin: 20px;
-}
-#menuNav li {
-  display: inline;
-  padding: 0px;
-  margin: 2.5px;
-}
-#menuNav a:visited {
-  color: #2f3130;
-}
-#menuNav a:active {
-  color: #90DDF0;
-}
-#menuNav a {
-  color: #2f3130;
-  font-size: 1.2rem;
 }
 
 .menuHeaders {
@@ -271,6 +275,9 @@ button a {
 }
 .menuHeaders a:visited {
   color: whitesmoke;
+}
+.menuHeaders a:hover {
+  color: #a7c957;
 }
 .menuHeaders p {
   font-size: 2rem;
@@ -294,7 +301,27 @@ button a {
   display: grid;
   justify-items: center;
   align-items: center;
-  text-align: center;
+}
+#foodMenu #menuNav {
+  margin: 20px;
+}
+#foodMenu #menuNav li {
+  display: inline;
+  padding: 0px;
+  margin: 2.5px;
+}
+#foodMenu #menuNav li a:visited {
+  color: #2f3130;
+}
+#foodMenu #menuNav li a:active {
+  color: #90DDF0;
+}
+#foodMenu #menuNav li a {
+  color: #2f3130;
+  font-size: 1.2rem;
+}
+#foodMenu #menuNav li a:hover {
+  color: #a7c957;
 }
 #foodMenu ul li {
   list-style: none;
@@ -377,7 +404,7 @@ button a {
     margin-top: 25px;
   }
   #indexMain .indexImg {
-    height: 300px;
+    height: 27vh;
   }
 }
 @media only screen and (min-width: 1400px) {
